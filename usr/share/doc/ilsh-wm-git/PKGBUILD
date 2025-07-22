@@ -1,7 +1,7 @@
 # Maintainer: Ilan Shavit <ilan.shavit@gmail.com>
 pkgname=ilsh-wm-git
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc="My config files for: i3, chadwm, qtile, awesome"
 arch=('any')
 url="https://github.com/ilsh1964/ilsh-wm-git"
