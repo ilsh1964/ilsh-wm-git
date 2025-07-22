@@ -1,0 +1,46 @@
+# FOCUS
+mod + "h"             Move focus to left
+mod + "l"             Move focus to right
+mod + "j"             Move focus down
+mod + "k"             Move focus up
+mod + "space"         Move window focus to other window
+
+# SIZING
+mod] + "minus"        Grow window to the left
+mod] + "equal"        Grow window to the right
+
+# QTILE GENERAL
+mod + "ctrl" + "r"    Reload the config
+mod + "ctrl" + "c"    Change wallpaper
+mod + "e"             Logout
+mod + "Tab"           Toggle between layouts
+mod + "q"             Kill focused window
+mod + "t"             Toggle floating on the focused window
+mod + "m"             Maximize \ Minimize,
+
+# APPLICATION
+mod +  "b"            brave
+mod +  "c"            gnome-calculator
+mod +  "r"            Spawn a command
+mod +  "f"            firefox
+mod +  "o"            libreoffice
+mod +  "g"            gimp
+mod +  "p"            keepassxc
+mod +  "n"            nautilus
+mod +  "v"            virtualbox
+mod +  "x"            hypnotix
+mod + "shift" + "F1"  Volume Down
+mod + "shift" + "F2"  Volume Up
+
+# PRINT SCREEN
+PrintScreen           PrintScreen
+Alt + PrintScreen     Choose window to PrintScreen
+
+# XDOTOOL SHORTCUT
+mod + "shift" "d"     nc
+mod + "shift" "e"     email
+mod + "shift" "i"     id
+mod + "shift" "n"     fname
+mod + "shift" "p"     pass
+mod + "shift" "s"     sec
+mod + "shift" "t"     tel

@@ -1,0 +1,38 @@
+cat /etc/environment
+QT_QPA_PLATFORMTHEME=qt5ct
+QT_STYLE_OVERRIDE=kvantum
+GTK_THEME=Arc-Dawn-Dark
+EDITOR=nano
+
+
+
+
+### run.sh dile
+function run {
+ if ! pgrep $1 ;
+  then
+    $@&
+  fi
+}
+
+run xrandr --output Virtual-1 --primary --mode 1366x768 --pos 0x0 --rotate normal
+
+run "nm-applet"
+run "pamac-tray"
+run "variety -n"
+#run "flameshot"
+run "xfce4-power-manager"
+run "xfce4-clipman"
+run "blueberry-tray"
+run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
+
+run "numlockx on"
+
+sxhkd -c ~/.config/arco-chadwm/sxhkd/sxhkdrc &
+#feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm2.jpg &
+
+
+
+pkill bar.sh
+~/.config/arco-chadwm/scripts/bar.sh &
+while type chadwm >/dev/null; do chadwm && continue || break; done
