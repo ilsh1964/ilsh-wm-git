@@ -177,7 +177,7 @@ static const Layout layouts[] = {
 static const Key keys[] = {
     /* modifier                         key         function        argument */
 
-    // brightness and audio 
+    // brightness and audio
     {0,             XF86XK_AudioLowerVolume,    spawn, {.v = downvol}},
 	{0,             XF86XK_AudioMute, spawn,    {.v = mutevol }},
 	{0,             XF86XK_AudioRaiseVolume,    spawn, {.v = upvol}},
@@ -209,7 +209,7 @@ static const Key keys[] = {
     { MODKEY,                           XK_Left,    shiftview,      {.i = -1 } },
     { MODKEY,                           XK_Right,   shiftview,      {.i = +1 } },
 
-    // change m,cfact sizes 
+    // change m,cfact sizes
     { MODKEY,                           XK_h,       setmfact,       {.f = -0.05} },
     { MODKEY,                           XK_l,       setmfact,       {.f = +0.05} },
     { MODKEY|ShiftMask,                 XK_h,       setcfact,       {.f = +0.25} },
@@ -234,7 +234,7 @@ static const Key keys[] = {
     { MODKEY|ControlMask,               XK_o,       incrogaps,      {.i = +1 } },
     { MODKEY|ControlMask|ShiftMask,     XK_o,       incrogaps,      {.i = -1 } },
 
-    // inner+outer hori, vert gaps 
+    // inner+outer hori, vert gaps
     { MODKEY|ControlMask,               XK_6,       incrihgaps,     {.i = +1 } },
     { MODKEY|ControlMask|ShiftMask,     XK_6,       incrihgaps,     {.i = -1 } },
     { MODKEY|ControlMask,               XK_7,       incrivgaps,     {.i = +1 } },
@@ -301,17 +301,6 @@ static const Key keys[] = {
     TAGKEYS(                            XK_7,                       6)
     TAGKEYS(                            XK_8,                       7)
     TAGKEYS(                            XK_9,                       8)
-
-    // azerty keyboard (Belgium)
-    // TAGKEYS(                               XK_ampersand,                0)
-    // TAGKEYS(                               XK_eacute,                   1)
-    // TAGKEYS(                               XK_quotedbl,                 2)
-    // TAGKEYS(                               XK_apostrophe,               3)
-    // TAGKEYS(                               XK_parenleft,                4)
-    // TAGKEYS(                               XK_section,                  5)
-    // TAGKEYS(                               XK_egrave,                   6)
-    // TAGKEYS(                               XK_exclam,                   7)
-    // TAGKEYS(                               XK_ccedilla,                 8)
 
 };
 
